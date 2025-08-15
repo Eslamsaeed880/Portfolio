@@ -120,15 +120,99 @@ section.about {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  height: 120vh;
 
 }
 
 section.about h2 {
   font-size: var(--section-font-size);
   font-weight: bold;
-  padding: 4rem;
+  padding: 5rem;
 }
+
+section.about .about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  justify-content: space-evenly;
+  
+}
+
+.about-content .usp h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.about-content .usp {
+  text-align: center;
+  padding: 0 5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  justify-content: end;
+  overflow-wrap: break-word;
+}
+
+.about-content .cta {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  border: none;
+  border-radius: 0.7rem;
+  cursor: pointer;
+  -webkit-border-radius: 0.7rem;
+  -moz-border-radius: 0.7rem;
+  -ms-border-radius: 0.7rem;
+  -o-border-radius: 0.7rem;
+}
+
+.about-content .professions ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 4rem;
+  
+}
+
+.about-content .professions li {
+  transition: 500ms;
+  padding: 1rem 1rem;
+  background-color: #24232847;
+  margin: 0rem 2rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -ms-transition: 500ms;
+  -o-transition: 500ms;
+}
+
+.about-content .professions li:hover {
+  transition: 500ms;
+  transform:scale(1.025);
+  -webkit-transform:scale(1.025);
+  -moz-transform:scale(1.025);
+  -ms-transform:scale(1.025);
+  -o-transform:scale(1.025);
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -ms-transition: 500ms;
+  -o-transition: 500ms;
+}
+
+.about-content .professions li h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+
 
 section.skills {
   background-color: lightblue;
