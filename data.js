@@ -1,4 +1,4 @@
-DATA = {
+const DATA = {
     about: {
         description: "I am a passionate web developer with experience in building modern web applications."
     },
@@ -53,3 +53,5 @@ DATA = {
         }
     ]
 }
+
+export default DATA;
