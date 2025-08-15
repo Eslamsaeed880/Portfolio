@@ -1,5 +1,6 @@
 import React from 'react';
 import Nav from './components/Nav';
+import Home from './components/Home';
 
 
 
@@ -10,11 +11,7 @@ function App() {
     <>
       <Nav />
 
-      <section className="home" id="home">
-        <h2 className='name'>Hi, I'm <span className="highlight">Eslam</span> Saeed</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores earum rem repudiandae unde, necessitatibus nulla.</p>
-        <a href="#projects" className="cta">View My Work</a>
-      </section>
+      <Home>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores earum rem repudiandae unde, necessitatibus nulla.</Home>
 
       <section className="about" id="about">
         <h2>About <span className="highlight">Me</span></h2>
@@ -27,7 +24,6 @@ function App() {
             </div>
             <div>
               <a href="#contact" className="cta">Contact Me</a>
-
             </div>
           </div>
           <div className="professions">
