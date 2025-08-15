@@ -15,6 +15,7 @@ export default function About() {
                         <a href="#contact" className="cta">Contact Me</a>
                     </div>
                 </div>
+                
                 <div className="professions">
                     <ul>
                         <li>

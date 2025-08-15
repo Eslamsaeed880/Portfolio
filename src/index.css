@@ -17,6 +17,7 @@
 
 html, :host {
   font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+  scroll-behavior: smooth;
 }
 
 body {
@@ -251,7 +252,6 @@ section.skills {
         display: grid;
         grid-auto-flow: column;
         overflow-x: auto;
-        overflow-y: hidden;
         overscroll-behavior-inline: contain;
         gap: 3rem;
         width: 50vw;
@@ -263,30 +263,7 @@ section.skills {
           height: 40px;
           border-radius: 2px;
         }
-  
-        img:hover {
-          transform: scale(1.025);
-          transition: transform 0.3s ease-in;
-          -webkit-transform: scale(1.025);
-          -moz-transform: scale(1.025);
-          -ms-transform: scale(1.025);
-          -o-transform: scale(1.025);
-          -webkit-transition: transform 0.3s ease-in;
-          -moz-transition: transform 0.3s ease-in;
-          -ms-transition: transform 0.3s ease-in;
-          -o-transition: transform 0.3s ease-in;
-        }
-        li {
-          padding: 0 3rem;
-          transition: transform 0.3s ease-in;
-          overflow: hidden;
-          
-          -webkit-transition: transform 0.3s ease-in;
-          -moz-transition: transform 0.3s ease-in;
-          -ms-transition: transform 0.3s ease-in;
-          -o-transition: transform 0.3s ease-in;
-          
-        }
+        
       }
     }
   }
@@ -316,6 +293,6 @@ section.contact {
     
   }
   section.skills {
-    padding-top: 40vh;
+    padding-top: 80vh;
   }
 }

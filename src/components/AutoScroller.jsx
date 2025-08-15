@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 
-export default function AutoScroller({ children, speed = 1.5, interval = 20 }) {
+export default function AutoScroller({ children, speed = 1, interval = 20 }) {
   const scrollerRef = useRef(null);
   const items = React.Children.toArray(children);
   const doubledItems = [...items, ...items];
@@ -42,7 +42,6 @@ export default function AutoScroller({ children, speed = 1.5, interval = 20 }) {
     <div
       ref={scrollerRef}
       className="media-scroller"
-      style={{ cursor: 'grab' }}
     >
       {doubledItems}
     </div>
