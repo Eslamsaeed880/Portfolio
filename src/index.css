@@ -217,7 +217,7 @@ section.skills {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 200vh;
+  height: calc(100vh + 20vh);
 
   .skills-content {
     display: grid;
@@ -373,19 +373,57 @@ section.contact {
   height: 100vh;
 }
 
+@media (max-width: 1054px) {
+  .projects-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    .project-cards {
+      justify-content: center !important;
+      align-items: center !important;
+    }
+    gap: 2rem;
 
-@media (max-width: 768px) {
-  
+    .project-cards {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 810px) {
+  header {
+    background-color: hsl(278, 80%, 20%, 0.3);
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;  
+    height: auto;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+
+      li {
+        margin: 0.5rem 0;
+      }
+    }
+
+  }
+
+
   section {
     padding: 2rem;
   }
-  
+
 
   section.about .about-content {
     grid-template-columns: 1fr;
     
-  }
-  section.skills {
-    padding-top: 80vh;
   }
 }
