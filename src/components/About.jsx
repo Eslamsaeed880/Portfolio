@@ -1,4 +1,5 @@
 import React from 'react';
+import Profession from './Profession';
 
 export default function About() {
     return (
@@ -18,18 +19,9 @@ export default function About() {
                 
                 <div className="professions">
                     <ul>
-                        <li>
-                            <h3>Web Developer</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, sunt! Ad deleniti nostrum facere corrupti.</p>
-                        </li>
-                        <li>
-                            <h3>UI/UX Designer</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, sunt! Ad deleniti nostrum facere corrupti.</p>
-                        </li>
-                        <li>
-                            <h3>Content Creator</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, sunt! Ad deleniti nostrum facere corrupti.</p>
-                        </li>
+                        <Profession title="Frontend Developer" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, sunt! Ad deleniti nostrum facere corrupti." />
+                        <Profession title="UI/UX Designer" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, sunt! Ad deleniti nostrum facere corrupti." />
+                        <Profession title="Content Creator" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, sunt! Ad deleniti nostrum facere corrupti." />
                     </ul>
                 </div>
             </div>

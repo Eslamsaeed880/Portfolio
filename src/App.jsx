@@ -2,9 +2,9 @@ import React from 'react';
 import Nav from './components/Nav';
 import Home from './components/Home';
 import About from './components/About';
-import AutoScroller from './components/AutoScroller';
 import Skills from './components/Skills';
 import DATA from '../data';
+import Projects from './components/Projects';
 
 
 function App() {
@@ -18,8 +18,8 @@ function App() {
 
       <About />
 
-      <section className="skills" id="skills">
-        <h2>My <span className="highlight">Skills</span></h2>
+      <section className="skills" >
+        <h2 id="skills">My <span className="highlight">Skills</span></h2>
 
         <div className="skills-content">
           <Skills tool = {DATA.skills.languages} Title = "Languages" />
@@ -32,9 +32,7 @@ function App() {
         </div>
       </section>
 
-      <section className="projects" id="projects">
-
-      </section>
+      <Projects />
 
       <section className="contact" id="contact">
 

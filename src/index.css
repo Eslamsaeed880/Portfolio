@@ -1,11 +1,11 @@
 :root {
-    --background: 210 40% 98%;
-    --foreground: 222 47% 11%;
-    --span-color: 250 65% 65%;
-    --card: 0 0% 100%;
-    --primary: 250 47% 60%;
-    --primary-foreground: 210 40% 98%;
-    --border: 214 32% 91%;
+    --background: 222 30% 12%; /* deep blue-gray */
+    --foreground: 0 0% 98%; /* almost white */
+    --span-color: 278 80% 60%; /* purple accent */
+    --card: 222 23% 18%; /* dark card */
+    --primary: 200 100% 50%; /* blue accent */
+    --primary-foreground: 0 0% 98%;
+    --border: 220 16% 40%; /* muted border */
     --section-font-size: 2.5rem;
 }
 
@@ -21,7 +21,7 @@ html, :host {
 }
 
 body {
-    background-color: hsl(0deg 0% 0%);
+    background-color: hsl(var(--background));
     color: hsl(222deg 49.85% 93.72%);
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -29,6 +29,12 @@ body {
     --tw-duration: .3s;
     font-feature-settings: "rlig" 1, "calt" 1;
     transition-duration: .3s;
+}
+
+h2 {
+  font-size: var(--section-font-size);
+  padding: 3rem;
+  text-align: center;
 }
 
 header {
@@ -82,7 +88,7 @@ header li a:hover {
 }
 
 section {
-  height: 120vh;
+  height: auto;
 }
 
 section.home {
@@ -91,11 +97,6 @@ section.home {
   justify-content: center;
   align-items: center;
   height: 100vh;
-
-  h2 {
-    font-size: var(--section-font-size);
-    font-weight: bold;
-  }
 
   p {
     margin-top: 1.5rem;
@@ -123,13 +124,7 @@ section.about {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 120vh;
-  
-  h2 {
-    font-size: var(--section-font-size);
-    font-weight: bold;
-    padding: 5rem;
-  }
+  min-height: 100vh;
 
   .about-content {
     display: grid;
@@ -224,11 +219,6 @@ section.skills {
   align-items: center;
   height: 200vh;
 
-  h2 {
-      font-size: var(--section-font-size);
-      padding: 4rem;
-  }
-
   .skills-content {
     display: grid;
     grid-template-columns: 1fr;
@@ -236,17 +226,26 @@ section.skills {
     gap: 2rem;
     justify-content: space-evenly;
     ;
+    
+    h3 {
+      font-size: 1.5rem;
+      padding-bottom: 1rem;
+      text-align: center;
+    }
 
     .skill {
       display: flex;  
       flex-direction: column;
       align-items: center;
       gap: 2rem;
+      mask: linear-gradient(
+        90deg, 
+        transparent , 
+        rgba(255, 255, 255, 1) 20%, 
+        rgba(255, 255, 255, 1) 80%, 
+        transparent
+      );
 
-      h3 {
-        font-size: 1.5rem;
-        padding-bottom: 1rem;
-      }
   
       .media-scroller {
         display: grid;
@@ -272,18 +271,112 @@ section.skills {
 
 
 section.projects {
-  background-color: lightgreen;
+  padding: 0 4rem 4rem 4rem;
+  
+
+  .projects-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    > p {
+      text-align: center;
+      overflow-wrap: break-word;
+      width: 50vw;
+      margin: 0 0 3rem 0;
+    }
+    
+    .project-cards {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: left;
+
+      .project-card {
+        background-color: hsl(var(--card));
+        border-radius: 4px;
+        overflow: hidden;
+        transition: transform 0.3s;
+        padding: 0.5rem;
+        height: auto;
+        margin: 1rem;
+        
+        -webkit-transition: transform 0.3s;
+        -moz-transition: transform 0.3s;
+        -ms-transition: transform 0.3s;
+        -o-transition: transform 0.3s;
+
+
+
+        
+        &:hover {
+          transform: scale(1.05);
+          transition: 1000ms;
+          background-color: hsl(278, 80%, 20%);
+          -webkit-transition: 1000ms;
+          -moz-transition: 1000ms;
+          -ms-transition: 1000ms;
+          -o-transition: 1000ms;  
+        }
+        
+        > img {
+          max-width: 400px;
+          min-width: 300px;
+          height: auto;
+          border-radius: 4px;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          -ms-border-radius: 4px;
+          -o-border-radius: 4px;
+        }
+
+        h3 {
+          font-size: 1.5rem;
+          margin: 1rem 0;
+        }
+  
+        p {
+          width: 400px;
+          padding-bottom: 1rem;
+          font-size: 1rem;
+          color: #ffffffb1;
+        }
+
+        .card-icons {
+          display: flex;
+          align-items: center;
+          gap: 0.8rem;
+
+          img {
+            width: 30px;
+            height: 30px;
+            
+            &:hover {
+              transform: scale(1.1);
+              transition: 1000ms;
+              -webkit-transition: 1000ms;
+              -moz-transition: 1000ms;
+              -ms-transition: 1000ms;
+              -o-transition: 1000ms;  
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 section.contact {
   background-color: lightcoral;
+  height: 100vh;
 }
 
 
 @media (max-width: 768px) {
   
   section {
-    height: auto;
     padding: 2rem;
   }
   
