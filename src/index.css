@@ -319,7 +319,7 @@ section.projects {
         &:hover {
           transform: scale(1.05);
           transition: 1000ms;
-          background-color: hsl(278, 80%, 20%);
+          background-color: #37344147;
           -webkit-transition: 1000ms;
           -moz-transition: 1000ms;
           -ms-transition: 1000ms;
@@ -374,9 +374,84 @@ section.projects {
 }
 
 section.contact {
-  /* background-color: lightcoral; */
   height: 100vh;
-  
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    > h2 {
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .description-text {
+      font-size: 1.2rem;
+      text-align: center;
+      width: 50vw;
+    }
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+    margin: 2rem;
+
+    
+    .contact-info {
+
+
+      > h3 {
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      font-size: 1.2rem;
+      text-align: center;
+
+      > p {
+        margin: 0.5rem 0;
+      }
+
+
+      .info-cards {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 3rem;
+
+        .info-card {
+          display: flex;
+          gap: 2rem;
+          background-color: hsl(var(--card));
+          padding: 1rem;
+          border-radius: 10px;
+          align-items: center;
+
+          &:hover {
+            background-color: #37344147;
+            transform: scale(1.025);
+            transition: 1000ms;
+            -webkit-transition: 1000ms;
+            -moz-transition: 1000ms;
+            -ms-transition: 1000ms;
+            -o-transition: 1000ms;
+            -webkit-transform: scale(1.025);
+            -moz-transform: scale(1.025);
+            -ms-transform: scale(1.025);
+            -o-transform: scale(1.025);
+}
+        }
+      }
+    }
+
+  }
+
 }
 
 @keyframes slide {

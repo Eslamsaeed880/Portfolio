@@ -1,6 +1,9 @@
 const DATA = {
     about: {
-        description: "I am a passionate web developer with experience in building modern web applications."
+        description: "I am a passionate web developer with experience in building modern web applications.",
+        email: "eslamsaeed298@gmail.com",
+        phone: "+20 01101109666",
+        location: "Cairo, Egypt",
     },
     skills: {
         languages: [
@@ -54,6 +57,12 @@ const DATA = {
             link: "https://myecommerce.com"
         }
     ]
+}
+
+export const ICONS = {
+    email: 'public/email.svg',
+    phone: 'public/phone.svg',
+    location: 'public/location.svg'
 }
 
 export default DATA;
