@@ -5,6 +5,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import DATA from '../data';
 import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 
 function App() {
@@ -28,15 +29,15 @@ function App() {
 
           <Skills tool = {DATA.skills.frontend} Title = "Frontend" />
 
+          <Skills tool = {DATA.skills.databases} Title = "Databases" />
+
           <Skills tool = {DATA.skills.tools} Title = "Tools" />
         </div>
       </section>
 
       <Projects />
 
-      <section className="contact" id="contact">
-
-      </section>
+      <Contact />
     </>
   );
 }

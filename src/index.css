@@ -33,7 +33,7 @@ body {
 
 h2 {
   font-size: var(--section-font-size);
-  padding: 3rem;
+  padding: 4rem;
   text-align: center;
 }
 
@@ -96,7 +96,11 @@ section.home {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
+
+  h2 {
+    padding: 2rem;
+  }
 
   p {
     margin-top: 1.5rem;
@@ -218,6 +222,7 @@ section.skills {
   flex-direction: column;
   align-items: center;
   height: calc(100vh + 20vh);
+  height: auto;
 
   .skills-content {
     display: grid;
@@ -234,10 +239,10 @@ section.skills {
     }
 
     .skill {
-      display: flex;  
-      flex-direction: column;
-      align-items: center;
-      gap: 2rem;
+      overflow: hidden;
+      padding: 0 60px;
+      width: 50vw;
+      white-space: nowrap;
       mask: linear-gradient(
         90deg, 
         transparent , 
@@ -246,27 +251,27 @@ section.skills {
         transparent
       );
 
-  
+      &:hover .media-scroller {
+        animation-play-state: paused;
+        -webkit-animation-play-state: paused;
+        -moz-animation-play-state: paused;
+        -ms-animation-play-state: paused;
+        -o-animation-play-state: paused;
+      }
+      
       .media-scroller {
-        display: grid;
-        grid-auto-flow: column;
-        overflow-x: auto;
-        overscroll-behavior-inline: contain;
-        gap: 3rem;
-        width: 50vw;
-        scrollbar-width: none; 
-        -ms-overflow-style: none;
-
+        display: inline-block;
+        animation: 10s slide infinite linear;
+        -webkit-animation: 10s slide infinite linear;
         img {
           width: 120px;
           height: 40px;
+          margin: 0 40px;
           border-radius: 2px;
         }
-        
       }
     }
   }
-
 }
 
 
@@ -369,8 +374,25 @@ section.projects {
 }
 
 section.contact {
-  background-color: lightcoral;
+  /* background-color: lightcoral; */
   height: 100vh;
+  
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0)  ;
+    -webkit-transform: translateX(0)  ;
+    -moz-transform: translateX(0)  ;
+    -ms-transform: translateX(0)  ;
+    -o-transform: translateX(0)  ;
+  } to {
+    transform: translateX(-100%)  ;
+    -webkit-transform: translateX(-100%)  ;
+    -moz-transform: translateX(-100%)  ;
+    -ms-transform: translateX(-100%)  ;
+    -o-transform: translateX(-100%)  ;
+  }
 }
 
 @media (max-width: 1054px) {
@@ -395,7 +417,7 @@ section.contact {
 
 @media (max-width: 810px) {
   header {
-    background-color: hsl(278, 80%, 20%, 0.3);
+    /* background-color: hsl(278, 80%, 20%, 0.3); */
     flex-direction: column;
     position: relative;
     align-items: center;
