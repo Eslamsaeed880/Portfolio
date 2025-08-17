@@ -180,7 +180,7 @@ section.about {
       li {
         transition: 500ms;
         padding: 1rem 1rem;
-        background-color: #24232847;
+        background-color: hsl(var(--card));
         margin: 0rem 2rem;
         border-radius: 10px;
         -webkit-border-radius: 10px;
@@ -374,7 +374,8 @@ section.projects {
 }
 
 section.contact {
-  height: 100vh;
+  height: auto;
+  padding-bottom: 8rem;
 
   .description {
     display: flex;
@@ -445,13 +446,25 @@ section.contact {
             -moz-transform: scale(1.025);
             -ms-transform: scale(1.025);
             -o-transform: scale(1.025);
-}
         }
       }
     }
-
   }
+  }
+}
 
+footer {
+  height: 20vh;
+  width: auto;
+  display: grid;
+  align-items: center;
+  border-top: 2px solid hsl(var(--border));
+  justify-content: flex-start;
+  background-color: hsl(var(--card));
+
+  p {
+    padding: 2rem;
+  }
 }
 
 @keyframes slide {
