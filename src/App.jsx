@@ -36,7 +36,7 @@ function App() {
         </div>
       </section>
 
-      <Projects />
+      <Projects projects={DATA.projects}/>
 
       <Contact />
 

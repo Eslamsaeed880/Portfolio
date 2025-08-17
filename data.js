@@ -47,14 +47,32 @@ const DATA = {
     },
     projects: [
         {
-            title: "Personal Portfolio",
-            description: "A personal portfolio website to showcase my work.",
-            link: "https://myportfolio.com"
+            title: "Job Finder",
+            description: "A web application for finding job opportunities.",
+            githubLink: "https://github.com/Momen-Abdelkader/Job-Finder",
+            previewLink: false,
+            photo: "https://github.com/Momen-Abdelkader/Job-Finder/blob/main/assets/project.png?raw=true"
         },
         {
-            title: "E-commerce Platform",
-            description: "A fully functional e-commerce platform built with React and Node.js.",
-            link: "https://myecommerce.com"
+            title: "Management App",
+            description: "A web application for managing tasks and projects.",
+            githubLink: "https://github.com/Eslamsaeed880/Management-App?tab=readme-ov-file",
+            previewLink: "https://management-app-ky5q.vercel.app/",
+            photo: "https://github.com/Eslamsaeed880/Management-App/blob/main/public/image.png?raw=true"
+        },
+        {
+            title: "Personal Portfolio",
+            description: "A personal portfolio website to showcase my work.",
+            githubLink: "https://github.com/Eslamsaeed880/Portfolio?tab=readme-ov-file",
+            previewLink: false,
+            photo: "../../public/portfolio.png"
+        },
+        {
+            title: "Timer Challenge",
+            description: "A fully functional timer application built with React.",
+            githubLink: "https://github.com/Eslamsaeed880/timer-challenge",
+            previewLink: "https://timer-challenge-beige.vercel.app/",
+            photo: "https://github.com/Eslamsaeed880/timer-challenge/blob/main/src/assets/image.png?raw=true"
         }
     ]
 }
