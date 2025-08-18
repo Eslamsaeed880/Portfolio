@@ -326,15 +326,10 @@ section.projects {
         background-color: hsl(var(--card));
         border-radius: 4px;
         overflow: hidden;
-        transition: transform 0.3s;
+        transition: transform 1s;
         padding: 0.5rem;
         height: auto;
         margin: 1rem;
-        
-        -webkit-transition: transform 0.3s;
-        -moz-transition: transform 0.3s;
-        -ms-transition: transform 0.3s;
-        -o-transition: transform 0.3s;
 
 
 
@@ -456,6 +451,11 @@ section.contact {
           padding: 1rem;
           border-radius: 10px;
           align-items: center;
+          transition: 1000ms;
+          -webkit-transition: 1000ms;
+          -moz-transition: 1000ms;
+          -ms-transition: 1000ms;
+          -o-transition: 1000ms;
 
           &:hover {
             background-color: #37344147;
