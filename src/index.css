@@ -21,14 +21,15 @@ html, :host {
 }
 
 body {
-    background-color: hsl(var(--background));
-    color: hsl(222deg 49.85% 93.72%);
-    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-    --tw-duration: .3s;
-    font-feature-settings: "rlig" 1, "calt" 1;
-    transition-duration: .3s;
+  overflow-x: hidden;
+  background-color: hsl(var(--background));
+  color: hsl(222deg 49.85% 93.72%);
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: .3s;
+  font-feature-settings: "rlig" 1, "calt" 1;
+  transition-duration: .3s;
 }
 
 h2 {
@@ -557,5 +558,78 @@ footer {
   section.about .about-content {
     grid-template-columns: 1fr;
     
+  }
+}
+
+@media (max-width: 465px) {
+  .projects-content {
+    padding: 0;
+    .project-cards {
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 2rem;
+    }
+  }
+
+
+  .project-card {
+    width: 90vw;
+    min-width: unset;
+    max-width: 95vw;
+    margin: 0 auto 2rem auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      width: 40vw;
+      font-size: 0.8rem !important;
+      overflow-wrap: break-word;
+      text-align: center;
+      padding: 0 1rem;
+    }
+    > img {
+      width: 100%;
+      max-width: 350px;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+    h3 {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    .card-icons {
+      justify-content: center;
+      gap: 1.2rem;
+    }
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .info-card {
+      width: 90vw;
+      gap: 0.5rem;
+
+      img {
+        width: 16px;
+        height: 16px;
+      }
+
+      h4 {
+        font-size: 1rem;
+      }
+
+      p {
+        font-size: 1rem;
+        overflow-wrap:anywhere;
+      }
+    }
   }
 }

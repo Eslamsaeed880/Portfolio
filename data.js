@@ -2,7 +2,7 @@ const DATA = {
     about: {
         description: [
         "I am a passionate full-stack web developer with experience in building modern, scalable, and high-performance applications.",
-        "I specialize in creating websites optimized for SEO and speed, while writing clean, maintainable code that follows best practices.",
+        "I specialize in creating websites optimized f  or SEO and speed, while writing clean, maintainable code that follows best practices.",
         "I enjoy working across the entire stack—from frontend design to backend logic—and I am continuously seeking to grow my expertise in software engineering and emerging technologies."
         ],
         profession: [
