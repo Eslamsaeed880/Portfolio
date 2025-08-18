@@ -10,7 +10,7 @@ export default function Projects({ projects }) {
                 <div className="project-cards">
                     {projects.map((project, index) => (
                         <ProjectCard 
-                            key={index + 1}
+                            key={index}
                             title={project.title}
                             description={project.description}
                             photo={project.photo}

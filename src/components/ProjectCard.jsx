@@ -1,4 +1,6 @@
 import React from 'react';
+import GITHUB_ICON from '../../public/github-icon.png';
+import PREVIEW_ICON from '../../public/preview-icon.svg';
 
 export default function ProjectCard({ title, description, photo, githubLink, previewLink }) {
     return (
