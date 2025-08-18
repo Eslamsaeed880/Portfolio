@@ -14,7 +14,9 @@ function App() {
 
   return (
     <>
-      <Nav />
+      <div className="nav-case">
+        <Nav />
+      </div>
 
       <div className="main-blur">
         <Home></Home>

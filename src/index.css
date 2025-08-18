@@ -28,6 +28,7 @@ body {
   transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
   transition-duration: var(--tw-duration, var(--default-transition-duration));
   --tw-duration: .3s;
+  overflow-x: hidden;
   font-feature-settings: "rlig" 1, "calt" 1;
   transition-duration: .3s;
 }
@@ -38,9 +39,15 @@ h2 {
   text-align: center;
 }
 
+.nav-case {
+  overflow: visible;
+}
+
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 100;
   background-color: transparent;
   display: flex;
@@ -684,6 +691,7 @@ footer {
     }
   }
 }
+
 
 .body-blur {
   display: none;
