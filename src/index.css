@@ -481,9 +481,38 @@ footer {
   width: auto;
   display: grid;
   align-items: center;
+  justify-content: center;
   border-top: 2px solid hsl(var(--border));
-  justify-content: flex-start;
   background-color: hsl(var(--card));
+  overflow: hidden;
+
+  .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+
+    img {
+      width: 30px;
+      height: 30px;
+      transition: 1000ms;
+      -webkit-transition: 1000ms;
+      -moz-transition: 1000ms;
+      -ms-transition: 1000ms;
+      -o-transition: 1000ms;  
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.1);
+        transition: 1000ms;
+        -webkit-transition: 1000ms;
+        -moz-transition: 1000ms;
+        -ms-transition: 1000ms;
+        -o-transition: 1000ms;  
+      }
+    }
+  }
 
   p {
     padding: 2rem;

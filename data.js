@@ -82,7 +82,7 @@ const DATA = {
             title: "Personal Portfolio",
             description: "A personal portfolio website to showcase my work.",
             githubLink: "https://github.com/Eslamsaeed880/Portfolio?tab=readme-ov-file",
-            previewLink: false,
+            previewLink: "https://portfolio-tau-blush-6ik4j2hchs.vercel.app/",
             photo: "https://github.com/Eslamsaeed880/Portfolio/blob/main/public/portfolio.png?raw=true"
         },
         {
