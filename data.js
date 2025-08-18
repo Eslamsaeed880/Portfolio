@@ -78,9 +78,9 @@ const DATA = {
 }
 
 export const ICONS = {
-    email: './src/assets/email.svg',
-    phone: './src/assets/phone.svg',
-    location: './src/assets/location.svg'
+    email: '../../public/email.svg',
+    phone: '../../public/phone.svg',
+    location: '../../public/location.svg'
 }
 
 export default DATA;
