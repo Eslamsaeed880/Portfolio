@@ -16,31 +16,32 @@ function App() {
     <>
       <Nav />
 
-      <Home></Home>
+      <div className="main-blur">
+        <Home></Home>
+        <About description={DATA.about.description} profession={DATA.about.profession}/>
 
-      <About description={DATA.about.description} profession={DATA.about.profession}/>
+        <section className="skills" >
+          <h2 id="skills">My <span className="highlight">Skills</span></h2>
 
-      <section className="skills" >
-        <h2 id="skills">My <span className="highlight">Skills</span></h2>
+          <div className="skills-content">
+            <Skills tool = {DATA.skills.languages} Title = "Languages" />
 
-        <div className="skills-content">
-          <Skills tool = {DATA.skills.languages} Title = "Languages" />
+            <Skills tool = {DATA.skills.backend} Title = "Backend" />
 
-          <Skills tool = {DATA.skills.backend} Title = "Backend" />
+            <Skills tool = {DATA.skills.frontend} Title = "Frontend" />
 
-          <Skills tool = {DATA.skills.frontend} Title = "Frontend" />
+            <Skills tool = {DATA.skills.databases} Title = "Databases" />
 
-          <Skills tool = {DATA.skills.databases} Title = "Databases" />
+            <Skills tool = {DATA.skills.tools} Title = "Tools" />
+          </div>
+        </section>
 
-          <Skills tool = {DATA.skills.tools} Title = "Tools" />
-        </div>
-      </section>
+        <Projects projects={DATA.projects}/>
 
-      <Projects projects={DATA.projects}/>
+        <Contact />
 
-      <Contact />
-
-      <Footer />
+        <Footer />
+      </div>
     </>
   );
 }

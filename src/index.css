@@ -22,7 +22,6 @@ html, :host {
 }
 
 body {
-  overflow-x: hidden;
   background-color: hsl(var(--background));
   color: hsl(222deg 49.85% 93.72%);
   transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
@@ -40,9 +39,10 @@ h2 {
 }
 
 header {
-  background-color: transparent;
   position: sticky;
   top: 0;
+  z-index: 100;
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -558,24 +558,42 @@ footer {
 
 @media (max-width: 810px) {
   header {
-    flex-direction: column;
+    align-items: space-between;
+  }
+
+  .logo {
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+
+  .hamburger {
+    z-index: 101;
     position: relative;
+    left: 3rem;
+    width: 30px;
+    height: 30px;
+  }
+
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
     align-items: center;
-    gap: 1rem;
-    padding: 1rem;  
-    height: auto;
+    gap: 4rem;
 
-    ul {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 3rem;
+    li {
+      font-size: larger;
+      z-index: 200;
+      cursor: pointer;
+      padding: 1rem 0;
 
-      li {
-        margin: 0.5rem 0;
+      a {
+        z-index: 1000;
       }
-    }
 
+    }
   }
 
   .professions li {
@@ -665,4 +683,8 @@ footer {
       }
     }
   }
+}
+
+.body-blur {
+  display: none;
 }
