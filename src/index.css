@@ -528,7 +528,6 @@ footer {
 
 @media (max-width: 810px) {
   header {
-    /* background-color: hsl(278, 80%, 20%, 0.3); */
     flex-direction: column;
     position: relative;
     align-items: center;
@@ -549,6 +548,10 @@ footer {
 
   }
 
+  .professions li {
+    width: 90vw;
+    min-width: 280px;
+  }
 
   section {
     padding: 2rem;
