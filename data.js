@@ -1,6 +1,24 @@
 const DATA = {
     about: {
-        description: "I am a passionate web developer with experience in building modern web applications.",
+        description: [
+        "I am a passionate full-stack web developer with experience in building modern, scalable, and high-performance applications.",
+        "I specialize in creating websites optimized for SEO and speed, while writing clean, maintainable code that follows best practices.",
+        "I enjoy working across the entire stack—from frontend design to backend logic—and I am continuously seeking to grow my expertise in software engineering and emerging technologies."
+        ],
+        profession: [
+            {
+                title: "Software Engineer",
+                description: "I Can Make Websites that are good with SEO and Performance in Mind, and I always strive to write clean, maintainable code and follow best practices."
+            },
+            {
+                title: "Backend Developer",
+                description: "I Can Build Robust and Scalable Server-Side Applications, and I Have Experience with Various Backend Technologies."
+            },
+            {
+                title: "Frontend Developer",
+                description: "I Can Create Engaging and Interactive User Interfaces Using the Latest Frontend Technologies."
+            }
+        ],
         email: "eslamsaeed298@gmail.com",
         phone: "+20 01101109666",
         location: "Cairo, Egypt",

@@ -16,9 +16,9 @@ function App() {
     <>
       <Nav />
 
-      <Home>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores earum rem repudiandae unde, necessitatibus nulla.</Home>
+      <Home></Home>
 
-      <About />
+      <About description={DATA.about.description} profession={DATA.about.profession}/>
 
       <section className="skills" >
         <h2 id="skills">My <span className="highlight">Skills</span></h2>
