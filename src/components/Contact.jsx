@@ -1,6 +1,9 @@
 import React from 'react';
 import ContactInfo from './ContactInfo';
 import DATA, { ICONS } from '../../data';
+import EMAIL_ICON from '../../public/email.svg';
+import PHONE_ICON from '../../public/phone.svg';
+import LOCATION_ICON from '../../public/location.svg';
 
 export default function Contact() {
 
@@ -14,9 +17,9 @@ export default function Contact() {
                 <div className="contact-info">
                     <h3>Contact Information</h3>
                     <div className="info-cards">
-                        <ContactInfo title="Email" content={ DATA.about.email} icon={ICONS.email} />
-                        <ContactInfo title="Phone" content={ DATA.about.phone} icon={ICONS.phone} />
-                        <ContactInfo title="Location" content={ DATA.about.location} icon={ICONS.location} />
+                        <ContactInfo title="Email" content={ DATA.about.email} icon={EMAIL_ICON} />
+                        <ContactInfo title="Phone" content={ DATA.about.phone} icon={PHONE_ICON} />
+                        <ContactInfo title="Location" content={ DATA.about.location} icon={LOCATION_ICON} />
                     </div>
                 </div>
             </div>
