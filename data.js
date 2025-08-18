@@ -65,7 +65,7 @@ const DATA = {
             description: "A personal portfolio website to showcase my work.",
             githubLink: "https://github.com/Eslamsaeed880/Portfolio?tab=readme-ov-file",
             previewLink: false,
-            photo: "https://github.com/Eslamsaeed880/Portfolio/blob/main/public/image.png?raw=true"
+            photo: "https://github.com/Eslamsaeed880/Portfolio/blob/main/public/portfolio.png?raw=true"
         },
         {
             title: "Timer Challenge",
