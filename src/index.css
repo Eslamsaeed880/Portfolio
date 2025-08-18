@@ -586,6 +586,7 @@ footer {
   nav ul {
     display: flex;
     flex-direction: column;
+    padding-top: 4rem;
     z-index: 100;
     align-items: center;
     gap: 4rem;
