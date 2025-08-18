@@ -65,7 +65,7 @@ const DATA = {
             description: "A personal portfolio website to showcase my work.",
             githubLink: "https://github.com/Eslamsaeed880/Portfolio?tab=readme-ov-file",
             previewLink: false,
-            photo: "./public/portfolio.png"
+            photo: "../../public/portfolio.png"
         },
         {
             title: "Timer Challenge",
@@ -78,9 +78,9 @@ const DATA = {
 }
 
 export const ICONS = {
-    email: './public/email.svg',
-    phone: './public/phone.svg',
-    location: './public/location.svg'
+    email: '../../public/email.svg',
+    phone: '../../public/phone.svg',
+    location: '../../public/location.svg'
 }
 
 export default DATA;
