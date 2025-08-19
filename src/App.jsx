@@ -22,8 +22,8 @@ function App() {
         <Home></Home>
         <About description={DATA.about.description} profession={DATA.about.profession}/>
 
-        <section className="skills" >
-          <h2 id="skills">My <span className="highlight">Skills</span></h2>
+        <section className="skills" id="skills" >
+          <h2>My <span className="highlight">Skills</span></h2>
 
           <div className="skills-content">
             <Skills tool = {DATA.skills.languages} Title = "Languages" />

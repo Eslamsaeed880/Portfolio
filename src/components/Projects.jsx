@@ -4,7 +4,8 @@ import ProjectCard from './ProjectCard';
 export default function Projects({ projects }) {
     return (
         <>
-            <h2 id="projects">Featured <span className="highlight">Projects</span></h2>
+            <div id="projects"></div>
+            <h2>Featured <span className="highlight">Projects</span></h2>
             <section className="projects">
                 <div className="projects-content">
                     <p>Here are some of my recent projects. Each project was carefully crafted with attention to detail, performance, and user experience.</p>

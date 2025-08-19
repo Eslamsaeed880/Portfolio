@@ -46,16 +46,23 @@ h2 {
 header {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  /*left: 0;
+  */border-radius: 0.7rem;
+  width: 98vw;
   z-index: 100;
-  background-color: transparent;
+  margin: 6px 10px;
+  background-color: hsl(var(--background));
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 10vh;
   padding: 1rem;
   padding-right: 4rem;
+  -webkit-border-radius: 0.7rem;
+  -moz-border-radius: 0.7rem;
+  -ms-border-radius: 0.7rem;
+  -o-border-radius: 0.7rem;
 }
 
 .logo {
@@ -138,6 +145,7 @@ header li a:hover, nav li a:hover {
 
 section {
   height: auto;
+  padding: 2rem 2rem;
 }
 
 span.cursor, .cursor {
@@ -191,7 +199,7 @@ section.home {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 100vh;
 
   h2 {
     padding: 1rem;
@@ -321,7 +329,6 @@ section.skills {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: calc(100vh + 20vh);
   height: auto;
 
   .skills-content {
@@ -374,6 +381,9 @@ section.skills {
   }
 }
 
+#projects {
+  padding: 1.5rem;
+}
 
 section.projects {
   padding: 0 4rem 4rem 4rem;
@@ -605,6 +615,7 @@ footer {
       &:hover {
         transform: scale(1.1);
         background-color: rgba(255, 255, 255, 0.3);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3) inset;
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
         transition: 1000ms;
         -webkit-transition: 1000ms;
@@ -688,6 +699,7 @@ footer {
     padding-top: 4rem;
     z-index: 100;
     align-items: center;
+    padding: 15vh 0;
     gap: 4rem;
 
     li {
