@@ -533,6 +533,57 @@ section.projects {
               -o-transition: 1000ms;  
             }
           }
+          .preview-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: width 0.3s ease;
+            -webkit-transition: width 0.3s ease;
+            -moz-transition: width 0.3s ease;
+            -ms-transition: width 0.3s ease;
+            -o-transition: width 0.3s ease;
+
+            img {
+              width: 18px;
+              height: 18px;
+            }
+
+            img[alt="Preview Icon"] {
+              display: block;
+            }
+            img[alt="Blue Preview Icon"] {
+              display: none;
+            }
+
+            span {
+              padding-bottom: 4px;
+              padding-right: 4px;
+            }
+
+            &:hover {
+              transition: width 0.3s ease;
+              -webkit-transition: width 0.3s ease;
+              -moz-transition: width 0.3s ease;
+              -ms-transition: width 0.3s ease;
+              -o-transition: width 0.3s ease;
+
+              img[alt="Preview Icon"] {
+                display: none;
+              }
+              img[alt="Blue Preview Icon"] {
+                display: block;
+              }
+              color: hsl(var(--primary));
+              transition: color 0.4s cubic-bezier(1, 0, 0, 1);
+              -webkit-transition: color 0.4s cubic-bezier(1, 0, 0, 1);
+              -moz-transition: color 0.4s cubic-bezier(1, 0, 0, 1);
+              -ms-transition: color 0.4s cubic-bezier(1, 0, 0, 1);
+              -o-transition: color 0.4s cubic-bezier(1, 0, 0, 1);
+            }
+          }
         }
       }
     }

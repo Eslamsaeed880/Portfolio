@@ -20,7 +20,7 @@ const DATA = {
             }
         ],
         email: "eslamsaeed298@gmail.com",
-        phone: "+20 01101109666",
+        phone: "+20 1101109666",
         location: "Cairo, Egypt",
     },
     skills: {
