@@ -401,8 +401,8 @@ section.skills {
     .skill {
       overflow: hidden;
       padding: 0 60px;
-      width: 50vw;
       white-space: nowrap;
+      width: 60vw;
       mask: linear-gradient(
         90deg, 
         transparent , 
@@ -782,6 +782,21 @@ footer {
     align-items: space-between;
   }
 
+  .skill {
+    width: 100vw !important;
+    
+    .media-scroller img {
+        width: 120px;
+        height: 40px;
+        margin: 0 5px !important;
+        border-radius: 2px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        -o-border-radius: 2px;
+      }
+  }
+
   .logo {
     padding-left: 1rem;
     font-size: 1.2rem;
@@ -796,6 +811,8 @@ footer {
     width: 30px;
     height: 30px;
   }
+
+  
 
   nav ul {
     display: flex;
