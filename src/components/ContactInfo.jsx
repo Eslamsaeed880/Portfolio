@@ -10,7 +10,7 @@ export default function ContactInfo({ title, content, icon }) {
     }
 
     return (
-        <div className={`${title.toLowerCase()} info-card`}>
+        <div className={`${title.toLowerCase()} info-card rainbow-outline`}>
             <img src={icon} alt={`${title.toLowerCase()} icon`} />
             <h4>{title}</h4>
             <p>{displayContent}</p>

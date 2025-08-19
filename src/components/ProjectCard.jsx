@@ -4,8 +4,9 @@ import PREVIEW_ICON from '../../public/preview-icon.svg';
 
 export default function ProjectCard({ title, description, photo, githubLink, previewLink }) {
     return (
+        
         <div className="project-card">
-            <img src={photo} alt="Project Screenshot" />
+            <a href={previewLink || githubLink}><img src={photo} alt="Project Screenshot" /></a>
             <h3>{title}</h3>
             <p>{description}</p>
             <div className="card-icons">

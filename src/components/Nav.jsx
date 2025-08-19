@@ -40,11 +40,11 @@ export default function Nav() {
             {
                 width > 810 &&
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home" className="hover-underline">Home</a></li>
+                    <li><a href="#about" className="hover-underline">About</a></li>
+                    <li><a href="#skills" className="hover-underline">Skills</a></li>
+                    <li><a href="#projects" className="hover-underline">Projects</a></li>
+                    <li><a href="#contact" className="hover-underline">Contact</a></li>
                 </ul>
             }
 
@@ -57,11 +57,11 @@ export default function Nav() {
         {isOpen && width <= 810 && (
             <nav>
                 <ul>
-                    <li onClick = {handleOpenMenu}><a href="#home">Home</a></li>
-                    <li onClick={handleOpenMenu}><a href="#about">About</a></li>
-                    <li onClick={handleOpenMenu}><a href="#skills">Skills</a></li>
-                    <li onClick={handleOpenMenu}><a href="#projects">Projects</a></li>
-                    <li onClick={handleOpenMenu}><a href="#contact">Contact</a></li>
+                    <li onClick = {handleOpenMenu}><a href="#home" className="hover-underline">Home</a></li>
+                    <li onClick={handleOpenMenu}><a href="#about" className="hover-underline">About</a></li>
+                    <li onClick={handleOpenMenu}><a href="#skills" className="hover-underline">Skills</a></li>
+                    <li onClick={handleOpenMenu}><a href="#projects" className="hover-underline">Projects</a></li>
+                    <li onClick={handleOpenMenu}><a href="#contact" className="hover-underline">Contact</a></li>
                 </ul>
             </nav>
         )}
