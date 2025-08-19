@@ -3,7 +3,7 @@
     --foreground: 0 0% 98%; /* almost white */
     --span-color: 278 80% 60%; /* purple accent */
     --card: 222 23% 18%; /* dark card */
-    --primary: 200 100% 50%; /* blue accent */
+    --primary: rgb(88, 2, 145); /* blue accent */
     --primary-foreground: 0 0% 98%;
     --border: 220 16% 40%; /* muted border */
     --section-font-size: 2.5rem;
@@ -90,8 +90,7 @@ h2 {
 header {
   position: fixed;
   top: 0;
-  /*left: 0;
-  */border-radius: 0.7rem;
+  border-radius: 0.7rem;
   width: 98vw;
   z-index: 100;
   margin: 6px 10px;
@@ -134,7 +133,7 @@ header {
   bottom: -3px;
   width: 0;
   height: 2px;
-  background: hsl(var(--primary));
+  background: hsl(200 100% 50%);
   transition: width 0.3s ease;
   -webkit-transition: width 0.3s ease;
   -moz-transition: width 0.3s ease;
@@ -177,8 +176,8 @@ header li a, nav li a {
 }
 
 header li a:hover, nav li a:hover {
-  color: hsl(var(--primary));
-  text-shadow: 0 0px 20px hsl(var(--primary));
+  color: hsl(200 100% 50%);
+  text-shadow: 0 0px 20px hsl(200 100% 50%);
   transition: color 0.4s cubic-bezier(1, 0, 0, 1);
   -webkit-transition: color 0.4s cubic-bezier(1, 0, 0, 1);
   -moz-transition: color 0.4s cubic-bezier(1, 0, 0, 1);
@@ -210,11 +209,11 @@ span.cursor, .cursor {
   display: inline-block;
   margin-top: 2rem;
   padding: 0.5rem 1rem;
-  background-color: hsl(var(--primary));
+  background-color: var(--primary);
   color: hsl(var(--primary-foreground));
   border: none;
   border-radius: 0.7rem;
-  box-shadow: 0 0px 20px hsl(var(--primary));
+  box-shadow: 0 0px 20px var(--primary);
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
   -webkit-transition: background-color 0.3s ease, color 0.3s ease;
@@ -229,7 +228,7 @@ span.cursor, .cursor {
 
 .cta:hover {
   background-color: hsl(var(--primary-foreground));
-  color: hsl(var(--primary));
+  color: var(--primary);
   box-shadow: 0 0px 20px rgba(255, 255, 255, 0.5);
   transition: background-color 0.3s ease, color 0.3s ease;
   -webkit-transition: background-color 0.3s ease, color 0.3s ease;
@@ -353,11 +352,6 @@ section.about {
   padding: 2px;
   background: linear-gradient(    
     90deg,    
-    red,    
-    orange,    
-    yellow,    
-    green,    
-    blue,    
     indigo,    
     violet  
   );
@@ -576,7 +570,7 @@ section.projects {
               img[alt="Blue Preview Icon"] {
                 display: block;
               }
-              color: hsl(var(--primary));
+              color: hsl(200 100% 50%);
               transition: color 0.4s cubic-bezier(1, 0, 0, 1);
               -webkit-transition: color 0.4s cubic-bezier(1, 0, 0, 1);
               -moz-transition: color 0.4s cubic-bezier(1, 0, 0, 1);
@@ -831,14 +825,6 @@ footer {
 
       a {
         z-index: 1000;
-      }
-      a:hover {
-        color:hsl(var(--primary));
-        transition: color 0.4s cubic-bezier(1, 0)      ;
-        -webkit-transition: color 0.4s cubic-bezier(1, 0)      ;
-        -moz-transition: color 0.4s cubic-bezier(1, 0)      ;
-        -ms-transition: color 0.4s cubic-bezier(1, 0)      ;
-        -o-transition: color 0.4s cubic-bezier(1, 0)      ;
       }
     }
   }
