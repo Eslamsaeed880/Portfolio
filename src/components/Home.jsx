@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
+import useRevealOnScroll from '../useRevealOnScroll';
 
 
 
@@ -9,6 +10,7 @@ export default function Home({ children }) {
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0); 
   const [deleting, setDeleting] = useState(false);
+  const revealRef = useRevealOnScroll('translate-in');
 
   useEffect(() => {
     if (index === titles.length) return;
@@ -31,7 +33,7 @@ export default function Home({ children }) {
   }, [subIndex, deleting, index, titles]);
 
   return (
-  <section className="home" id="home">
+  <section className="home reveal" id="home" ref={revealRef}>
       <h2 className='name'>Hi, I'm <span className="highlight">Eslam</span> Saeed</h2>
       <h3 className='title'>
         {titles[index].substring(0, subIndex)}

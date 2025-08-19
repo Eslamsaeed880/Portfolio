@@ -1,9 +1,11 @@
 import React from 'react';
 import Profession from './Profession';
+import useRevealOnScroll from '../useRevealOnScroll';
 
 export default function About({ description, profession }) {
+    const revealRef = useRevealOnScroll('translate-in');
     return (
-        <section className="about" id="about">
+        <section className="about reveal" id="about" ref={revealRef}>
             <h2>About <span className="highlight">Me</span></h2>
             <div className="about-content">
                 <div className="usp">

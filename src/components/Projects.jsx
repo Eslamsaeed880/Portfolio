@@ -1,9 +1,11 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
+import useRevealOnScroll from '../useRevealOnScroll';
 
 export default function Projects({ projects }) {
+    const revealRef = useRevealOnScroll('translate-in');
     return (
-        <>
+        <div className="reveal" ref={revealRef}>
             <div id="projects"></div>
             <h2>Featured <span className="highlight">Projects</span></h2>
             <section className="projects">
@@ -23,6 +25,6 @@ export default function Projects({ projects }) {
                     </div>
                 </div>
             </section>
-        </>
+        </div>
     );
 }

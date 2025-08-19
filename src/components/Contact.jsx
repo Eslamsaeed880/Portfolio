@@ -4,11 +4,13 @@ import DATA from '../../data';
 import EMAIL_ICON from '../../public/email.svg';
 import PHONE_ICON from '../../public/phone.svg';
 import LOCATION_ICON from '../../public/location.svg';
+import useRevealOnScroll from '../useRevealOnScroll';
 
 export default function Contact() {
+    const revealRef = useRevealOnScroll('translate-in');
 
     return (
-        <section className="contact" id="contact">
+        <section className="contact reveal" id="contact" ref={revealRef}>
             <div className="description">
                 <h2>Get in <span className="highlight">Touch</span></h2>
                 <p className="description-text">Have a project in mind or want to collaborate? Feel free to reach out. I'm always open to discussing new opportunities.</p>

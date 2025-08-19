@@ -784,7 +784,7 @@ footer {
 
   .skill {
     width: 100vw !important;
-    
+
     .media-scroller img {
         width: 120px;
         height: 40px;
@@ -935,4 +935,15 @@ footer {
 
 .body-blur {
   display: none;
+}
+
+/* General reveal animation for any element */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1);
+}
+.reveal.translate-in {
+  opacity: 1;
+  transform: translateY(0);
 }
