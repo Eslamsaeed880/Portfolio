@@ -767,6 +767,23 @@ up img {
   -o-transition: 0.3s ease;
 }
 
+.up:hover img {
+  animation: flib 0.3s ease-in-out forwards;
+  -webkit-animation: flib 0.3s ease-in-out forwards;
+}
+
+@keyframes flib {
+  0% {
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+
 @keyframes up {
   from {
     transform: translateY(0);
