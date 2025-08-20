@@ -7,6 +7,7 @@ import DATA from '../data';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Up from './components/Up';
 import SparkleBackground from './components/SparkleBackground';
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
         <Contact />
 
         <Footer />
+        <Up />
       </div>
     </>
   );
