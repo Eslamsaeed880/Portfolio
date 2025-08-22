@@ -1,7 +1,9 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import useRevealOnScroll from '../useRevealOnScroll';
-
+import DOWNLOAD_ICON from '../../public/download.svg';
+import VIOLET_DOWNLOAD_ICON from '../../public/violet-download.svg';
+import SocialMediaIcons from './SocialMediaIcons';
 
 
 export default function Home({ children }) {
@@ -39,8 +41,14 @@ export default function Home({ children }) {
         {titles[index].substring(0, subIndex)}
         <span className="cursor highlight">|</span>
       </h3>
-      <p>{children}</p>
-      <a href="#projects" className="cta">View My Work</a>
+
+      <div className="contacts">
+        <a href="#projects" className="cta">View My Work</a>
+        <a href="CV.pdf" download className="cta">Resume<img src={DOWNLOAD_ICON} alt="Download Icon" /><img src={VIOLET_DOWNLOAD_ICON} alt="Violet" /></a>
+      </div>
+
+      <SocialMediaIcons />
+
     </section>
   );
 }

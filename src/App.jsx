@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import Up from './components/Up';
 import SparkleBackground from './components/SparkleBackground';
 
+
 function App() {
 
 
@@ -21,7 +22,9 @@ function App() {
       </div>
 
       <div className="main-blur">
-        <Home></Home>
+        <Home>
+          
+        </Home>
         <About description={DATA.about.description} profession={DATA.about.profession}/>
 
         <section className="skills" id="skills" >

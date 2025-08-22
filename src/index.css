@@ -206,7 +206,8 @@ span.cursor, .cursor {
 }
 
 .cta {
-  display: inline-block;
+  display: inline-flex;
+  gap: 0.5rem;
   margin-top: 2rem;
   padding: 0.5rem 1rem;
   background-color: var(--primary);
@@ -244,6 +245,12 @@ section.home {
   align-items: center;
   height: 100vh;
 
+  .contacts {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
   h2 {
     padding: 1rem;
   }
@@ -258,6 +265,17 @@ section.home {
     max-width: 600px;
     text-align: center;
   }
+}
+
+.cta img[alt="Violet"] {
+  display: none;
+}
+
+.cta:hover img[alt="Violet"] {
+  display: inline;
+}
+.cta:hover img[alt="Download Icon"] {
+  display: none;
 }
 
 section.about {
@@ -366,6 +384,7 @@ section.about {
   -ms-border-radius: inherit;
   -o-border-radius: inherit;
 }
+
 
 
 .rainbow-outline:hover::before {
@@ -692,40 +711,42 @@ footer {
   background-color: hsl(var(--card));
   overflow: hidden;
 
-  .icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    margin-top: 2rem;
+  
+  p {
+    padding: 1rem;
+  }
+}
 
-    img {
-      width: 30px;
-      height: 30px;
-      border-radius: 30%;
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+
+  img {
+    width: 30px;
+    height: 30px;
+    border-radius: 30%;
+    transition: 1000ms;
+    -webkit-transition: 1000ms;
+    -moz-transition: 1000ms;
+    -ms-transition: 1000ms;
+    -o-transition: 1000ms;  
+    cursor: pointer;
+    box-shadow: indigo 0 0 10px;
+
+    &:hover {
+      transform: scale(1.1);
+      background-color: rgba(255, 255, 255, 0.3);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3) inset;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
       transition: 1000ms;
       -webkit-transition: 1000ms;
       -moz-transition: 1000ms;
       -ms-transition: 1000ms;
       -o-transition: 1000ms;  
-      cursor: pointer;
-
-      &:hover {
-        transform: scale(1.1);
-        background-color: rgba(255, 255, 255, 0.3);
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3) inset;
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-        transition: 1000ms;
-        -webkit-transition: 1000ms;
-        -moz-transition: 1000ms;
-        -ms-transition: 1000ms;
-        -o-transition: 1000ms;  
-      }
     }
-  }
-
-  p {
-    padding: 1rem;
   }
 }
 
