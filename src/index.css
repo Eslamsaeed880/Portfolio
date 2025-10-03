@@ -434,8 +434,13 @@ section.skills {
       
       .media-scroller {
         display: inline-block;
+        margin-top: 2rem;
         animation: 10s slide infinite linear;
         -webkit-animation: 10s slide infinite linear;
+        -moz-animation: 10s slide infinite linear;
+        -ms-animation: 10s slide infinite linear;
+        -o-animation: 10s slide infinite linear;
+
         img {
           width: 120px;
           height: 40px;
@@ -867,18 +872,18 @@ up img {
   }
 
   .skill {
-    width: 100vw !important;
+    width: 80vw !important;
 
     .media-scroller img {
-        width: 120px;
-        height: 40px;
-        margin: 0 5px !important;
-        border-radius: 2px;
-        -webkit-border-radius: 2px;
-        -moz-border-radius: 2px;
-        -ms-border-radius: 2px;
-        -o-border-radius: 2px;
-      }
+      width: 80px !important;
+      height: 30px !important;
+      margin: 0 5px !important;
+      border-radius: 2px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      -o-border-radius: 2px;
+    }
   }
 
   .logo {
@@ -971,7 +976,6 @@ up img {
     }
   }
 }
-
 
 @media (max-width: 465px) {
   .project-card {
