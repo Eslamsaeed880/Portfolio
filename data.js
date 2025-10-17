@@ -69,7 +69,7 @@ const DATA = {
             description: "A backend App with nodejs and express for ecommerce website",
             previewLink: false,
             githubLink: "https://github.com/Eslamsaeed880/ecommerce",
-            photo: "https://github.com/Eslamsaeed880/ecommerce/raw/main/image.png?raw=true"
+            photo: "https://github.com/Eslamsaeed880/ecommerce/raw/main/images/image2.png"
         },
         {
             title: "Job Finder",
