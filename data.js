@@ -72,6 +72,13 @@ const DATA = {
             photo: "https://github.com/Eslamsaeed880/ecommerce/raw/main/images/image2.png"
         },
         {
+            title: "Fitness API",
+            description: "A backend App with nodejs and express for fitness website",
+            previewLink: false,
+            githubLink: "https://github.com/Eslamsaeed880/Fitness-API",
+            photo: "https://github.com/Eslamsaeed880/Fitness-API/blob/main/images/Fitness.png?raw=true"
+        },
+        {
             title: "Job Finder",
             description: "A web application for finding job opportunities.",
             githubLink: "https://github.com/Momen-Abdelkader/Job-Finder",
