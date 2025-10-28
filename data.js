@@ -91,20 +91,6 @@ const DATA = {
             githubLink: "https://github.com/Eslamsaeed880/Management-App?tab=readme-ov-file",
             previewLink: "https://management-app-ky5q.vercel.app/",
             photo: "https://github.com/Eslamsaeed880/Management-App/blob/main/public/image.png?raw=true"
-        },
-        {
-            title: "Personal Portfolio",
-            description: "A personal portfolio website to showcase my work.",
-            githubLink: "https://github.com/Eslamsaeed880/Portfolio?tab=readme-ov-file",
-            previewLink: "https://portfolio-tau-blush-6ik4j2hchs.vercel.app/",
-            photo: "https://github.com/Eslamsaeed880/Portfolio/blob/main/public/portfolio.png?raw=true"
-        },
-        {
-            title: "Timer Challenge",
-            description: "A fully functional timer application built with React.",
-            githubLink: "https://github.com/Eslamsaeed880/timer-challenge",
-            previewLink: "https://timer-challenge-beige.vercel.app/",
-            photo: "https://github.com/Eslamsaeed880/timer-challenge/blob/main/src/assets/image.png?raw=true"
         }
     ]
 };
