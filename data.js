@@ -83,7 +83,7 @@ const DATA = {
             description: "A web application for finding job opportunities.",
             githubLink: "https://github.com/Momen-Abdelkader/Job-Finder",
             previewLink: false,
-            photo: "../../public/JobSearch.png"
+            photo: "../public/JobSearch.png"
         },
         {
             title: "Management App",
