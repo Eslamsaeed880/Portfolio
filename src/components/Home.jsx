@@ -44,7 +44,7 @@ export default function Home({ children }) {
 
       <div className="contacts">
         <a href="#projects" className="cta">View My Work</a>
-        <a href="https://drive.google.com/drive/u/1/folders/1eGc8_pMzEoVO1rJE2rauChSaskJBzaN5" className="cta">Resume<img src={DOWNLOAD_ICON} alt="Download Icon" /><img src={VIOLET_DOWNLOAD_ICON} alt="Violet" /></a>
+        <a href="https://drive.google.com/drive/folders/1eGc8_pMzEoVO1rJE2rauChSaskJBzaN5?usp=sharing" className="cta">Resume<img src={DOWNLOAD_ICON} alt="Download Icon" /><img src={VIOLET_DOWNLOAD_ICON} alt="Violet" /></a>
       </div>
 
       <SocialMediaIcons />
