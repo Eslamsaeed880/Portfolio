@@ -1,22 +1,22 @@
 const DATA = {
     about: {
         description: [
-        "I am a passionate full-stack web developer with experience in building modern, scalable, and high-performance applications.",
-        "I specialize in creating websites optimized f  or SEO and speed, while writing clean, maintainable code that follows best practices.",
-        "I enjoy working across the entire stack—from frontend design to backend logic—and I am continuously seeking to grow my expertise in software engineering and emerging technologies."
+            "I am a backend-focused software engineer with strong interest in system design, scalability, and performance optimization.",
+            "I build production-ready applications with clean architecture principles, proper testing, CI/CD pipelines, Dockerized environments, and performance considerations from day one.",
+            "Beyond coding, I focus on designing systems — implementing caching, background jobs, load testing, and recommendation systems — always thinking about how software behaves at scale."
         ],
         profession: [
             {
-                title: "Software Engineer",
-                description: "I Can Make Websites that are good with SEO and Performance in Mind, and I always strive to write clean, maintainable code and follow best practices."
+                title: "Backend Engineer",
+                description: "I design and build scalable APIs and distributed systems using clean architecture, caching strategies, queues, and performance optimization techniques."
             },
             {
-                title: "Backend Developer",
-                description: "I Can Build Robust and Scalable Server-Side Applications, and I Have Experience with Various Backend Technologies."
+                title: "System Design Enthusiast",
+                description: "I enjoy breaking down real-world problems into scalable system architectures, working with event driven systems, databases, load balancing, and reliability patterns."
             },
             {
-                title: "Frontend Developer",
-                description: "I Can Create Engaging and Interactive User Interfaces Using the Latest Frontend Technologies."
+                title: "Full-Stack Developer",
+                description: "I develop complete web applications from frontend interfaces to backend logic, ensuring performance, SEO, and maintainability across the entire stack."
             }
         ],
         email: "eslamsaeed298@gmail.com",
@@ -33,12 +33,12 @@ const DATA = {
             { alt: "CSS3", src: "https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" },
             { alt: "C", src: "https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white" },
             { alt: "C++", src: "https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white" },
+            { alt: "C#", src: "https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white" },
+            { alt: "PHP", src: "https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white" },
         ],
         frontend: [
             { alt: "React", src: "https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" },
-            { alt: "Next JS", src: "https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white" },
             { alt: "Bootstrap", src: "https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white" },
-            { alt: "Redux", src: "https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white" },
             { alt: "SASS", src: "https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white" },
             { alt: "TailwindCSS", src: "https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" },
         ],
@@ -47,7 +47,8 @@ const DATA = {
             { alt: "Express.js", src: "https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB" },
             { alt: "GraphQL", src: "https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white" },
             { alt: "Django", src: "https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white" },
-            { alt: "Nodemon", src: "https://img.shields.io/badge/NODEMON-%23323330.svg?style=for-the-badge&logo=nodemon&logoColor=%BBDEAD" },
+            { alt: "Spring", src: "https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white" },
+            { alt: "Spring Boot", src: "https://img.shields.io/badge/spring%20boot-%236DB33F.svg?style=for-the-badge&logo=springboot&logoColor=white" },
         ],
         databases: [
             { alt: "MySQL", src: "https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" },
@@ -59,11 +60,35 @@ const DATA = {
             { alt: "Git", src: "https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" },
             { alt: "GitHub", src: "https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" },
             { alt: "Figma", src: "https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white" },
-            { alt: "NPM", src: "https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white" },
             { alt: "Trello", src: "https://img.shields.io/badge/trello-%23026AA7.svg?style=for-the-badge&logo=trello&logoColor=white" },
+            { alt: "Docker", src: "https://img.shields.io/badge/docker-%232496ED.svg?style=for-the-badge&logo=docker&logoColor=white" },
+            { alt: "Docker Compose", src: "https://img.shields.io/badge/docker%20compose-%232496ED.svg?style=for-the-badge&logo=docker&logoColor=white" },
+            { alt: "Redis", src: "https://img.shields.io/badge/redis-%23DC382D.svg?style=for-the-badge&logo=redis&logoColor=white" },
+            { alt: "BullMQ", src: "https://img.shields.io/badge/BullMQ-%23FF0000.svg?style=for-the-badge&logo=redis&logoColor=white" },
+            { alt: "Jest", src: "https://img.shields.io/badge/jest-C21325?style=for-the-badge&logo=jest&logoColor=white" },
+            { alt: "Linux", src: "https://img.shields.io/badge/linux-%23FCC624.svg?style=for-the-badge&logo=linux&logoColor=black" },
+            { alt: "Swagger", src: "https://img.shields.io/badge/swagger-%2385EA2C.svg?style=for-the-badge&logo=swagger&logoColor=white" },
+
+        ],
+        systemDesign: [
+            { alt: "Event-Driven", src: "https://img.shields.io/badge/Event--Driven-%23FF5733.svg?style=for-the-badge&logo=event-driven&logoColor=white" },
+            { alt: "Caching", src: "https://img.shields.io/badge/Caching-%23FF5733.svg?style=for-the-badge&logo=cache&logoColor=white" },
+            { alt: "Load Balancing", src: "https://img.shields.io/badge/Load%20Balancing-%23FF5733.svg?style=for-the-badge&logo=load-balancing&logoColor=white" },
+            { alt: "Message Queues", src: "https://img.shields.io/badge/Message%20Queues-%23FF5733.svg?style=for-the-badge&logo=message-queue&logoColor=white" },
+            { alt: "CI/CD", src: "https://img.shields.io/badge/CI%2FCD-%23FF5733.svg?style=for-the-badge&logo=ci%2Fcd&logoColor=white" },
+            { alt: "Workers & Queues", src: "https://img.shields.io/badge/Workers%20%26%20Queues-%23FF5733.svg?style=for-the-badge&logo=workers%20%26%20queues&logoColor=white" },
+            { alt: "Scalability", src: "https://img.shields.io/badge/Scalability-%23FF5733.svg?style=for-the-badge&logo=scalability&logoColor=white" },
+            { alt: "Load Testing", src: "https://img.shields.io/badge/Load%20Testing-%23FF5733.svg?style=for-the-badge&logo=load-testing&logoColor=white" },
         ]
     },
     projects: [
+        {
+            title: "A Social Media App",
+            description: "A scalable backend App with nodejs, express, Redis, BullMQ, for social media website",
+            previewLink: false,
+            githubLink: "https://github.com/Eslamsaeed880/Social-Media-App",
+            photo: "https://github.com/Eslamsaeed880/Social-Media-App/blob/main/docs/main.png?raw=true"
+        },
         {
             title: "E-Commerce API",
             description: "A backend App with nodejs and express for ecommerce website",
@@ -84,13 +109,6 @@ const DATA = {
             githubLink: "https://github.com/Momen-Abdelkader/Job-Finder",
             previewLink: false,
             photo: "https://github.com/Momen-Abdelkader/Job-Finder/blob/main/frontend/assets/JobSearch.png?raw=true"
-        },
-        {
-            title: "Management App",
-            description: "A web application for managing tasks and projects.",
-            githubLink: "https://github.com/Eslamsaeed880/Management-App?tab=readme-ov-file",
-            previewLink: "https://management-app-ky5q.vercel.app/",
-            photo: "https://github.com/Eslamsaeed880/Management-App/blob/main/public/image.png?raw=true"
         }
     ]
 };

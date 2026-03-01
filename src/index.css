@@ -307,6 +307,7 @@ section.about {
 
       p {
         margin: 1rem;
+        font-size: 1.2rem;
       }
   
 
@@ -325,6 +326,7 @@ section.about {
       li {
         transition: 500ms;
         padding: 1rem 1rem;
+        font-size: large;
         background-color: hsl(var(--card));
         margin: 0rem 2rem;
         border-radius: 10px;
@@ -353,7 +355,6 @@ section.about {
 
       li h3 {
         margin-bottom: 0.5rem;
-        font-size: 1.2rem;
         font-weight: 600;
       }
 

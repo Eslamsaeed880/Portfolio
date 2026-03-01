@@ -39,6 +39,8 @@ function App() {
 
             <Skills tool = {DATA.skills.databases} Title = "Databases" />
 
+            <Skills tool = {DATA.skills.systemDesign} Title = "System Design" />
+
             <Skills tool = {DATA.skills.tools} Title = "Tools" />
           </div>
         </section>
