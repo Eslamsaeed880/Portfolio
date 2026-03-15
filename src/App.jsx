@@ -1,59 +1,71 @@
 import React from 'react';
-import Nav from './components/Nav';
-import Home from './components/Home';
-import About from './components/About';
-import Skills from './components/Skills';
-import DATA from '../data';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+import SidebarNav from './components/SidebarNav';
+import HeroSection from './components/HeroSection';
+import AboutSection from './components/AboutSection';
+import SkillsSection from './components/SkillsSection';
+import ProjectsSection from './components/ProjectsSection';
+import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
-import Up from './components/Up';
-import SparkleBackground from './components/SparkleBackground';
-
+import AnimationController from './components/AnimationController';
 
 function App() {
-
-
   return (
     <>
-      <SparkleBackground />
-      <div className="nav-case">
-        <Nav />
-      </div>
+      {/* Noise texture overlay */}
+      <div className="noise-overlay" aria-hidden="true" />
 
-      <div className="main-blur">
-        <Home>
-          
-        </Home>
-        <About description={DATA.about.description} profession={DATA.about.profession}/>
+      {/* Background grid */}
+      <div className="grid-lines" aria-hidden="true" />
 
-        <section className="skills" id="skills" >
-          <h2>My <span className="highlight">Skills</span></h2>
+      {/* Ambient glows */}
+      <div
+        aria-hidden="true"
+        style={{
+          position: 'fixed', top: '-20%', left: '-10%',
+          width: 600, height: 600, borderRadius: '50%',
+          pointerEvents: 'none', zIndex: 0,
+          background: 'radial-gradient(circle, rgba(124,58,237,0.12) 0%, transparent 70%)',
+        }}
+      />
+      <div
+        aria-hidden="true"
+        style={{
+          position: 'fixed', bottom: '-20%', right: '-10%',
+          width: 500, height: 500, borderRadius: '50%',
+          pointerEvents: 'none', zIndex: 0,
+          background: 'radial-gradient(circle, rgba(6,182,212,0.08) 0%, transparent 70%)',
+        }}
+      />
 
-          <div className="skills-content">
-            <Skills tool = {DATA.skills.languages} Title = "Languages" />
+      {/* Sidebar navigation */}
+      <SidebarNav />
 
-            <Skills tool = {DATA.skills.backend} Title = "Backend" />
-
-            <Skills tool = {DATA.skills.frontend} Title = "Frontend" />
-
-            <Skills tool = {DATA.skills.databases} Title = "Databases" />
-
-            <Skills tool = {DATA.skills.systemDesign} Title = "System Design" />
-
-            <Skills tool = {DATA.skills.tools} Title = "Tools" />
-          </div>
+      {/* Main content */}
+      <main className="main-content">
+        <section id="hero">
+          <HeroSection />
         </section>
+        <section id="about">
+          <AboutSection />
+        </section>
+        <section id="skills">
+          <SkillsSection />
+        </section>
+        <section id="projects">
+          <ProjectsSection />
+        </section>
+        <section id="contact">
+          <ContactSection />
+        </section>
+      </main>
 
-        <Projects projects={DATA.projects}/>
+      <Footer />
 
-        <Contact />
-
-        <Footer />
-        <Up />
-      </div>
+      {/* Handles scroll reveals + spotlight effects */}
+      <AnimationController />
     </>
   );
 }
 
 export default App;
+
