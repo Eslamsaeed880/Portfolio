@@ -1,4 +1,12 @@
 const DATA = {
+    titles: [    
+        "Software Engineer",
+        "System Designer",
+        "Tech Enthusiast",
+        "Lifelong Learner",],
+    bio:`I build scalable backends and distributed systems. Passionate about system design,
+        clean architecture, and performance optimization — from zero-to-one APIs to
+        production-grade microservices.`,
     about: {
         description: [
             "I am a backend-focused software engineer with a strong interest in system design, scalability, and performance optimization. I specialize in building production-ready applications with clean architecture, proper testing, CI/CD pipelines, and Dockerized environments.",
