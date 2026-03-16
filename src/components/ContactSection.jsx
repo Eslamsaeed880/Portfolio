@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+const RECEIVER_EMAIL = 'eslamsaeed298@gmail.com';
+
 const contactItems = [
   { icon: '📧', label: 'Email',    value: 'eslamsaeed298@gmail.com',   href: 'mailto:eslamsaeed298@gmail.com' },
   { icon: '📱', label: 'Phone',    value: '+20 1101109666',             href: 'tel:+201101109666' },
@@ -12,12 +14,29 @@ export default function ContactSection() {
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted]   = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitting(true);
-    // Placeholder — wire up to email service (e.g. EmailJS, Formspree) as needed
-    await new Promise(r => setTimeout(r, 1200));
+
+    const cleanName = formData.name.trim();
+    const cleanEmail = formData.email.trim();
+    const cleanSubject = formData.subject.trim();
+    const cleanMessage = formData.message.trim();
+
+    const subject = encodeURIComponent(cleanSubject || `New message from ${cleanName}`);
+    const body = encodeURIComponent(
+      [
+        `Name: ${cleanName}`,
+        `Email: ${cleanEmail}`,
+        '',
+        cleanMessage,
+      ].join('\n')
+    );
+
+    const gmailComposeUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(RECEIVER_EMAIL)}&su=${subject}&body=${body}`;
+    window.open(gmailComposeUrl, '_blank', 'noopener,noreferrer');
     setSubmitted(true);
+    setFormData({ name: '', email: '', subject: '', message: '' });
     setSubmitting(false);
   };
 
