@@ -23,10 +23,20 @@ export default function AnimationController() {
     const handleMouseMove = (e) => {
       const el = e.currentTarget;
       const rect = el.getBoundingClientRect();
+      el.classList.add('spotlight-active');
       el.style.setProperty('--mouse-x', `${e.clientX - rect.left}px`);
       el.style.setProperty('--mouse-y', `${e.clientY - rect.top}px`);
     };
-    spotlightCards.forEach(card => card.addEventListener('mousemove', handleMouseMove));
+    const handleMouseLeave = (e) => {
+      const el = e.currentTarget;
+      el.classList.remove('spotlight-active');
+      el.style.setProperty('--mouse-x', '-9999px');
+      el.style.setProperty('--mouse-y', '-9999px');
+    };
+    spotlightCards.forEach((card) => {
+      card.addEventListener('mousemove', handleMouseMove);
+      card.addEventListener('mouseleave', handleMouseLeave);
+    });
 
     // ─── Active nav on scroll ───
     const sections = ['hero', 'about', 'skills', 'projects', 'contact'];
@@ -50,7 +60,10 @@ export default function AnimationController() {
     return () => {
       revealObserver.disconnect();
       sectionObserver.disconnect();
-      spotlightCards.forEach(card => card.removeEventListener('mousemove', handleMouseMove));
+      spotlightCards.forEach((card) => {
+        card.removeEventListener('mousemove', handleMouseMove);
+        card.removeEventListener('mouseleave', handleMouseLeave);
+      });
     };
   }, []);
 

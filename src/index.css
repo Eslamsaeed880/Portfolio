@@ -61,7 +61,12 @@ ul { list-style: none; }
   transform: translate(-50%, -50%);
   pointer-events: none;
   z-index: 0;
-  transition: opacity 0.3s;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.spotlight-card:hover::before,
+.spotlight-card.spotlight-active::before {
+  opacity: 1;
 }
 
 /* ─── Glass Button ─── */
@@ -225,7 +230,6 @@ ul { list-style: none; }
 }
 .sidebar-nav-item:hover { background: rgba(255,255,255,0.04); color: var(--fg); }
 .sidebar-nav-item.active { color: var(--fg); }
-.sidebar-bottom { }
 .sidebar-socials { display: flex; gap: 10px; margin-bottom: 12px; opacity: 0.65; }
 .sidebar-social-link {
   width: 32px; height: 32px;
