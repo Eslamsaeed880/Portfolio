@@ -6,11 +6,12 @@ import ProjectsGrid     from './projects/ProjectsGrid.jsx';
 export default function ProjectsSection() {
   const [current, setCurrent] = useState(0);
   const total = projects.length;
+  const AUTO_ADVANCE_MS = 15000;
 
   useEffect(() => {
-    const timer = setInterval(() => setCurrent(prev => (prev + 1) % total), 5500);
+    const timer = setInterval(() => setCurrent(prev => (prev + 1) % total), AUTO_ADVANCE_MS);
     return () => clearInterval(timer);
-  }, [total]);
+  }, [total, AUTO_ADVANCE_MS]);
 
   return (
     <div className="projects-section with-sidebar">
