@@ -42,7 +42,7 @@ export const projects = [
     id: 4,
     title: 'Job Finder',
     description: 'Full-stack job search web application connecting job seekers with opportunities.',
-    longDesc: 'A full-stack web application for job searching built with Java Spring Boot backend and React frontend. Features job listings, advanced filtering, user profiles, application tracking, and a responsive UI.',
+    longDesc: 'A full-stack web application for job searching built with Python Django backend and HTML, CSS, and JavaScript frontend. Features job listings, advanced filtering, user profiles, application tracking, and a responsive UI.',
     image: 'https://raw.githubusercontent.com/Momen-Abdelkader/Job-Finder/main/frontend/assets/JobSearch.png',
     imageAlt: 'Job Finder application showing job listings',
     tags: ['Python', 'Django', 'JavaScript', 'Sqlite'],
